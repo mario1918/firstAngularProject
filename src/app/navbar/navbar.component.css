@@ -1,0 +1,22 @@
+.brand {
+    background-color: #20629c;
+    height: 55px;
+    box-shadow: 0 6px 8px #00000029;
+}
+
+#searchbar{
+    border-radius: 4px;
+    background-color: #0e3d66;
+    padding-left: 10px;
+    width: 200px;
+    transition: all .9s ease .1s;
+    border: 0;
+    outline: 0;
+    color: #fff !important;
+    font-size: 0.90rem !important;
+}
+
+#searchbar::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
