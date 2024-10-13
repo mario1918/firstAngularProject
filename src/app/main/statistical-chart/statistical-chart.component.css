@@ -1,0 +1,26 @@
+.statistical-card {
+    border-left: 3px solid grey;
+    width: 200px;
+    float: left;
+    margin-right: 40px;
+    padding-top: 12px;
+    padding-left: 19px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+.statistical-data {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.statistical-info {
+    font-size: 14px;
+}
+
+.statistical-info-cards{
+    display: flex;
+    flex-wrap: wrap;
+}

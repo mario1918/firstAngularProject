@@ -1,0 +1,6 @@
+.mapContainer {
+    display: flex;
+    width: 99.5%; 
+    height: 50vh;
+    margin-top: 30px;
+}
