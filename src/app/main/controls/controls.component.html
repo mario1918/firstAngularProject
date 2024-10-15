@@ -1,8 +1,14 @@
 <div class="container-flow">
+    <div class="row" style="padding-left: 15px;" >
+        <div class="col" *ngIf="macro">
+            <p>You are now seeing all the events, including the selected BOM/ACL.</p>
+        </div>
+    </div>
+
     <div class="row" style="padding: 0 15px; margin: 20px 0; height: 2vh;">
         <div class="col controls" style="padding: 0; margin: 0; height: 2vh;">
             <div class="seeAllEvents">
-                <input type="checkbox" style="margin-right: 5px;">
+                <input type="checkbox" [(ngModel)]="macro" style="margin-right: 5px;">
                 <label class="controlsIcons">See all events</label>
             </div>
 
@@ -30,7 +36,7 @@
 
     <div class="row" style="padding-left: 20px;">
         <div class="col-2">
-            <span>Testing element binding {{count}}</span><button class="btn btn-primary" (click)="increamentCount()">Click me!</button>
+            <span>Testing element binding {{count}}</span><button class="btn btn-primary m-2" (click)="increamentCount()">Click me!</button><button class="btn btn-primary" (click)="count = 0">Reset</button>
         </div>
 
         <div class="col-10">
