@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './controls.component.css'
 })
 export class ControlsComponent {
+  count = 0;
 
+  increamentCount(){
+    this.count++;
+  }
 }
