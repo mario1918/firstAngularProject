@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ControlsComponent {
   count = 0;
-  macro:boolean = true;
+  macro:boolean = false;
 
   increamentCount(){
     this.count++;

@@ -1,0 +1,38 @@
+.event-list-container{
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.events-card{
+    height: 80px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.events-card-body {
+    padding: 15px;
+}
+
+.card-events-prop{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.event-type {
+    width: 70px;
+    border: 1px solid #ddd;
+    height: 22px;
+}
+
+.event-status {
+    font-size: 11px;
+    margin-left: 15px;
+    background-color: #ddd;
+    padding: 2px;
+}
+
+.last-update {
+    font-size: 13px;
+    margin-left: 20px;
+}

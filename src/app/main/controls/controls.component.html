@@ -35,13 +35,18 @@
     </div>
 
     <div class="row" style="padding-left: 20px;">
-        <div class="col-2">
-            <span>Testing element binding {{count}}</span><button class="btn btn-primary m-2" (click)="increamentCount()">Click me!</button><button class="btn btn-primary" (click)="count = 0">Reset</button>
+        <div class="col">
+            <div>
+                <span>Testing element binding {{count}}</span>
+            </div>
+
+            <div>
+                <button class="btn btn-primary m-2" (click)="increamentCount()">Click me!</button><button class="btn btn-primary" (click)="count = 0">Reset</button>
+            </div>
+            
+            
         </div>
 
-        <div class="col-10">
-
-        </div>
-        
+                
     </div>
 </div>

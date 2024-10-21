@@ -1,0 +1,59 @@
+<div class="container-flow">
+    <div class="row">
+        <div class="col" style="padding-left: 20px;">
+            <div class="event-list-container">
+                <div class="events">
+                    <div>
+                        <button class="btn btn-primary m-2" (click)="getData()">Get Events</button>
+                    </div>
+                    <!-- <p>{{events | json}}</p> -->
+                    <!-- <div class="events-card">
+                        <div class="events-card-body">
+                            <div class="card-events-title">
+                                <h6></h6>
+                            </div>
+
+                            <div class="card-events-prop">
+                                <div class="event-type">
+                                    
+                                </div>
+
+                                <div class="event-status">
+                                    
+                                </div>
+
+                                <div class="last-update">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div> -->
+
+                    <div class="container-flow m-2">
+                        <table class="table table-primary table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">User ID</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Body</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of events">
+                                    <td>{{item.userId}}</td>
+                                    <td>{{item.id}}</td>
+                                    <td>{{item.title}}</td>
+                                    <td>{{item.body}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
