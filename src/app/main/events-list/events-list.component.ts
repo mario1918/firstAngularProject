@@ -3,6 +3,7 @@ import { Component, inject } from '@angular/core';
 import { EventsModel } from './eventsModel';
 import { CommonModule } from '@angular/common';
 
+
 @Component({
   selector: 'app-events-list',
   standalone: true,
@@ -17,10 +18,17 @@ export class EventsListComponent {
 
   events:EventsModel[] = [];
 
+  observer = {
+    next: (data:EventsModel[]) => {
+      this.events = data;
+    },
+    error: ()=> {
+      console.error(`Error has occured`);
+    }
+  }
+
 
   getData() {
-    this.http.get<EventsModel[]>(this.url).subscribe(data=> {
-      this.events = data;
-    })
+    this.http.get<EventsModel[]>(this.url).subscribe(this.observer)
   }
 }
