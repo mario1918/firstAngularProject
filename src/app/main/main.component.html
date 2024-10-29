@@ -10,8 +10,12 @@
         </div>
         <div class="col-6">
             <div class="charts">
+               
                 <button class="btn btn-primary m-2" (click)="changeType('line')">Line</button>
                 <button class="btn btn-primary m-2" (click)="changeType('bar')">Bar</button>
+                <button class="btn btn-primary m-2" (click)="changeType('doughnut')">Doughnut</button>
+                <button class="btn btn-primary m-2" (click)="changeType('radar')">Radar</button>
+                <button class="btn btn-primary m-2" (click)="changeType('pie')">Scatter</button>
                 <app-charts [data]="data" [labels]="labels" [chartType]="chartType"></app-charts>
             </div>
         </div>

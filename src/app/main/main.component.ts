@@ -23,12 +23,20 @@ export class MainComponent {
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
 
+ 
+
 
   changeType(chartTypeString: string){
     if(chartTypeString == 'bar'){
       this.chartType = 'bar';
     }else if (chartTypeString == 'line'){
       this.chartType = 'line';
+    }else if(chartTypeString == 'doughnut') {
+      this.chartType = 'doughnut';
+    }else if(chartTypeString == 'radar') {
+      this.chartType = 'radar'
+    }else if(chartTypeString == 'pie') {
+      this.chartType = 'pie'
     }
   }
 
