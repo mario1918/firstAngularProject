@@ -17,9 +17,15 @@ export class ChartsComponent implements  OnChanges {
 
 
 
-  public chartTypeInternal?: ChartType = 'bar';
+  public chartTypeInternal?: ChartType = 'line';
   public chartLabels: string[] = [];
   public chartData: any[] = [];
+
+  lineRadioButton: boolean = true;
+
+  ngOnInit() {
+    this.createChart();
+  }
   
   
 
@@ -38,9 +44,6 @@ export class ChartsComponent implements  OnChanges {
     }
   }
 
-  // ngOnInit(): void {
-  //   this.createChart();
-  // }
 
   createChart() {
     this.chart = new Chart("chartCanvas", {

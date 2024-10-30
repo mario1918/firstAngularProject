@@ -10,9 +10,9 @@ import { Chart, ChartType } from 'chart.js/auto';
   styleUrl: './chart-container.component.css'
 })
 export class ChartContainerComponent {
-  chartType: ChartType = 'bar';
-  labels: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-  data: any[] = [
+  chartType_P: ChartType = 'line';
+  labels_P: string[] = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  data_P: any[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
     { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
   ];
@@ -22,15 +22,15 @@ export class ChartContainerComponent {
 
   changeType(chartTypeString: string){
     if(chartTypeString == 'bar'){
-      this.chartType = 'bar';
+      this.chartType_P = 'bar';
     }else if (chartTypeString == 'line'){
-      this.chartType = 'line';
+      this.chartType_P = 'line';
     }else if(chartTypeString == 'doughnut') {
-      this.chartType = 'doughnut';
+      this.chartType_P = 'doughnut';
     }else if(chartTypeString == 'radar') {
-      this.chartType = 'radar'
+      this.chartType_P = 'radar'
     }else if(chartTypeString == 'pie') {
-      this.chartType = 'pie'
+      this.chartType_P = 'pie'
     }
   }
 

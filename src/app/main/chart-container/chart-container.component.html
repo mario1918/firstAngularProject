@@ -1,6 +1,6 @@
-<button class="btn btn-primary m-2" (click)="changeType('line')">Line</button>
-<button class="btn btn-primary m-2" (click)="changeType('bar')">Bar</button>
-<button class="btn btn-primary m-2" (click)="changeType('doughnut')">Doughnut</button>
-<button class="btn btn-primary m-2" (click)="changeType('radar')">Radar</button>
-<button class="btn btn-primary m-2" (click)="changeType('pie')">Scatter</button>
-<app-charts [data]="data" [labels]="labels" [chartType]="chartType"></app-charts>
+<input type="radio" class="form-check-input m-2" name="chart-type" id="line" (change)="changeType('line')">Line Chart
+<input type="radio" class="form-check-input m-2" name="chart-type" id="bar" (change)="changeType('bar')" >Bar Chart
+<input type="radio" class="form-check-input m-2" name="chart-type" id="doughnut" (change)="changeType('doughnut')">Doughnut Chart
+<input type="radio" class="form-check-input m-2" name="chart-type" id="radar" (change)="changeType('radar')"> Radar Chart
+<input type="radio" class="form-check-input m-2" name="chart-type" id="scatter" (change)="changeType('pie')"> Pie Chart
+<app-charts [data]="data_P" [labels]="labels_P" [chartType]="chartType_P"></app-charts>
